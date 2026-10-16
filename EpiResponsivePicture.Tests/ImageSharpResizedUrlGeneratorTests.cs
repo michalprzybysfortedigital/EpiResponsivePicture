@@ -75,7 +75,13 @@ namespace Forte.EpiResponsivePicture.Tests
 
         private static string GetExpectedUrl(string baseUrl, int width, int height, PictureSource source, PictureProfile profile, FocalPoint focalPoint, string leftovers = "")
         {
-            return $"{baseUrl}?{leftovers}width={width}&height={height}&quality={source.Quality.Quality}&rxy={focalPoint.X.ToString("0.###", CultureInfo.InvariantCulture)},{focalPoint.Y.ToString("0.###", CultureInfo.InvariantCulture)}&rmode={source.Mode}&format={profile.Format.ToString().ToUpperInvariant()}";
+            var format = profile.Format switch
+            {
+                ResizedImageFormat.Jpeg => "JPEG",
+                _ => profile.Format.ToString().ToUpperInvariant()
+            };
+
+            return $"{baseUrl}?{leftovers}width={width}&height={height}&quality={source.Quality.Quality}&rxy={focalPoint.X.ToString("0.###", CultureInfo.InvariantCulture)},{focalPoint.Y.ToString("0.###", CultureInfo.InvariantCulture)}&rmode={source.Mode}&format={format}";
         }
     }
 }

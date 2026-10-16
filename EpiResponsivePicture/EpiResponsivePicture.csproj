@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<RootNamespace>Forte.EpiResponsivePicture</RootNamespace>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
 		<PackageId>Forte.EpiResponsivePicture</PackageId>
@@ -56,15 +56,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Baaijte.Optimizely.ImageSharp.Web" Version="[2.0.0, 3)" />
-		<PackageReference Include="EPiServer.CMS.AspNetCore" Version="[12.5.0, 13)" />
-		<PackageReference Include="EPiServer.CMS.Core" Version="[12.5.0, 13)" />
-		<PackageReference Include="EPiServer.Framework" Version="[12.5.0, 13)" />
-		<PackageReference Include="EPiServer.CMS.UI" Version="[12.5.0, 13)" />
-		<PackageReference Include="EPiServer.CMS.AspNetCore.Templating" Version="[12.5.0, 13)" />
+		<PackageReference Include="Baaijte.Optimizely.ImageSharp.Web" Version="[3.1.1, 4)" />
+		<PackageReference Include="EPiServer.CMS.AspNetCore" Version="[12.23.1, 13)" />
+		<PackageReference Include="EPiServer.CMS.Core" Version="[12.23.1, 13)" />
+		<PackageReference Include="EPiServer.Framework" Version="[12.23.1, 13)" />
+		<PackageReference Include="EPiServer.CMS.UI" Version="[12.34.2, 13)" />
+		<PackageReference Include="EPiServer.CMS.AspNetCore.Templating" Version="[12.23.1, 13)" />
 		<PackageReference Include="Microsoft.Toolkit.Diagnostics" Version="7.1.2" />
-		<PackageReference Include="Reinforced.Typings" Version="1.6.3" />
-		<PackageReference Include="SixLabors.ImageSharp.Web.Providers.Azure" Version="2.0.0" />
+		<PackageReference Include="Reinforced.Typings" Version="1.6.7" />
+		<PackageReference Include="SixLabors.ImageSharp.Web.Providers.Azure" Version="3.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>
